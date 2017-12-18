@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.accordion dt {
+  width: 300px;
+  display: block;
+  border: 1px solid #000;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+}
+.accordion dd {
+  width: 300px;
+  margin: 0;
+  display: none;
+  border: 1px solid #000;
+  background-color: gray;
+  text-align: center;
+  line-height: 50px;
+}
+.accordion dt.active {
+  background-color: yellowgreen;
+}
