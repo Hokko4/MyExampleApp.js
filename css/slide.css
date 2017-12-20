@@ -10,6 +10,7 @@ h1 {
 }
 .slide {
   width: 640px;
+  height: 320px;
   margin: 0 auto;
   position: relative;
 }
@@ -21,14 +22,30 @@ h1 {
   left: 0;
   top: 0;
 }
-.slide ul {
+.slide > ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.slide li {
+.slide > li {
 
 }
 .active {
   display: block;
+}
+.page {
+  width: 640px;
+  margin: 0 auto;
+}
+.page ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* position: absolute;
+  bottom: 0; */
+  display: flex;
+  justify-content: space-around;
+}
+.page li {
+  /* position: absolute; */
 }
