@@ -5,6 +5,9 @@ html, body {
   padding: 0;
   /* height: 100%; */
 }
+body {
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
 h1 {
   text-align: center;
 }
@@ -27,8 +30,9 @@ h1 {
   margin: 0;
   padding: 0;
 }
-.slide > li {
-
+.slide > a {
+  text-decoration: none;
+  color: inherit;
 }
 a#prev {
   position: absolute;
@@ -71,4 +75,33 @@ a#next {
 }
 .page .active a {
   background-color: #0ff;
+}
+.banner {
+  margin: 0 auto;
+  width: 60%;
+}
+.banner ul {
+  list-style: none;
+  padding: 0;
+  padding-top: 30px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.banner ul li {
+
+}
+.banner ul li img {
+  vertical-align: bottom;
+  margin: 0 10px;
+}
+.banner a {
+  display: block;
+  height: 0;
+}
+.banner a:hover {
+  opacity: 0.7;
+}
+.banner .active img {
+  border: 3px solid #f63;
 }
