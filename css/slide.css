@@ -30,6 +30,18 @@ h1 {
 .slide > li {
 
 }
+a#prev {
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateX(-50%) translateY(-50%);
+}
+a#next {
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  transform: translateX(-50%) translateY(-50%);
+}
 .active {
   display: block;
 }
@@ -42,8 +54,6 @@ h1 {
   margin: 0;
   margin-top: 10px;
   padding: 0;
-  /* position: absolute;
-  bottom: 0; */
   display: flex;
   justify-content: space-around;
 }

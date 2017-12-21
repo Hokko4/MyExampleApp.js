@@ -51,6 +51,46 @@ $(function() {
     startTimer();
   });
 
+  $('#prev').click(function() {
+    clearInterval(intId);
+    console.log('stop interval');
+
+    var activeSlide = $('.slide .active');
+    var num = activeSlide.prevAll().length;
+    if (num === 0) {
+      startTimer();
+      return;
+    }
+
+    var btn = $('.page ul li.active');
+    btn.removeClass('active');
+    btn.prev().addClass('active');
+    activeSlide.fadeOut(speed).removeClass('active');
+    activeSlide.prev().fadeIn(speed).addClass('active');
+
+    startTimer();
+  });
+
+  $('#next').click(function() {
+    clearInterval(intId);
+    console.log('stop interval');
+
+    var activeSlide = $('.slide .active');
+    var num = activeSlide.nextAll().length;
+    if (num === 0) {
+      startTimer();
+      return;
+    }
+
+    var btn = $('.page ul li.active');
+    btn.removeClass('active');
+    btn.next().addClass('active');
+    activeSlide.fadeOut(speed).removeClass('active');
+    activeSlide.next().fadeIn(speed).addClass('active');
+
+    startTimer();
+  });
+
   // タイマー開始
   startTimer();
 });
