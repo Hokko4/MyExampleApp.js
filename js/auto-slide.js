@@ -17,4 +17,4 @@ $(function() {
     active.fadeOut(speed).removeClass('active');
     next.fadeIn(speed).addClass('active');
   }, interval);
-})
+});
