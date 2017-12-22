@@ -17,30 +17,30 @@ h1 {
 }
 .contents > ul {
   margin: 0;
-  padding: 0;
+  padding-left: 30px;
   list-style: none;
   display: flex;
+  border-bottom: 3px solid #f63;
   /* justify-content: center; */
 }
 .contents > ul li {
   width: 15%;
   /* height: 20px; */
+  padding: 5px 0;
   text-align: center;
-  border: 1px solid #999;
-  border-top: 3px solid pink;
+  border: 1px solid #f63;
   border-bottom: none;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 .contents > ul li a {
   display: block;
   text-decoration: none;
   color: inherit;
 }
+.contents > ul li:hover {
+  opacity: 0.5;
+}
 .tab-box {
-  border: 1px solid #999;
-  border-radius: 5px;
-  border-top-left-radius: 0;
+  padding: 20px;
 }
 .tab {
   display: none;
@@ -50,4 +50,11 @@ h1 {
 }
 .tab h2 {
   margin-top: 0;
+}
+.tab p {
+  margin-bottom: 0;
+}
+.contents > ul li.active {
+  background-color: #f63;
+  color: #fff;
 }
