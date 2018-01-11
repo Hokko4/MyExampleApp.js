@@ -8,6 +8,10 @@
   line-height: 50px;
   vertical-align: middle;
 }
+.accordion dt::after {
+  content: "↓";
+  color: #F63;
+}
 .accordion dd {
   width: 300px;
   margin: 0;
@@ -19,4 +23,8 @@
 }
 .accordion dt.active {
   background-color: yellowgreen;
+}
+.accordion dt.active::after {
+  content: "↑";
+  color: #FFF;
 }
